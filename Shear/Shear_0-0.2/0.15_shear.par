@@ -1,0 +1,92 @@
+#pylenstool modification 20181219164539
+#Mon Dec 17 13:11:53 2018
+#Image plane optimization
+#Chi2tot(dof=14): 0.0005
+#Chi2pos: 0.000484
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formex: 0.000000
+#Chi2formey: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): 21.418790
+#n_Warning: 0
+runmode
+	reference	3 133.693580 -1.360320 
+	image	1 image_wcs.cat 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	pixel	1 1000 shear_0.15.fits 
+	end	
+grille
+	nombre	100 
+	polaire	0 
+	nlentille	2 
+	end	
+potentiel	O1	
+	profil	81 
+	x_centre	0.000000 
+	y_centre	0.000000 
+	ellipticite	0.650027 
+	angle_pos	120.003265 
+	core_radius	3.000000 
+	core_radius_kpc	16.118806 
+	cut_radius	250.000000 
+	cut_radius_kpc	1343.233795 
+	v_disp	800.000000 
+	z_lens	0.4000 
+	end	
+potentiel	02	
+	profil	14 
+	gamma	0.15 
+	angle_pos	90.0 
+	kappa	0.0 
+	z_lens	0.4000 
+	cline	
+	nplan	1 1.000000 
+	dmax	50.000000 
+	algorithm	MARCHINGSQUARES 
+	limitHigh	10.0 
+	limitLow	1.000000 
+	end	
+grande
+	iso	0 0 1.000000 0.000000 0.000000 
+	name	best 
+	profil	0 10 
+	contour	0 10 
+	large_dist	0.300000 
+	end	
+cosmologie
+	model	1 
+	H0	70.000000 
+	omegaM	0.300000 
+	omegaX	0.700000 
+	omegaK	0. 
+	wX	-1.000000 
+	wa	0.000000 
+	end	
+champ
+	xmin	-50.000000 
+	xmax	50.000000 
+	ymin	-50.000000 
+	ymax	50.000000 
+	end	
+fini
